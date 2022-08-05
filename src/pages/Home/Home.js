@@ -2,7 +2,7 @@ import React from 'react';
 import { gql, useQuery } from '@apollo/client';
 // components
 import Error from './../../components/Error';
-import Loader from './../../compononets/Loader';
+import Loader from './../../components/Loader';
 import MainHeader from './../../components/MainHeader';
 // style
 import './style.scss';

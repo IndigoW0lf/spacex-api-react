@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { gql, useQuery } from '@apollo/client';
 // components
 import Error from './../../components/Error';
-import Loader from './../../compononets/Loader';
-import LaunchesFeed from './../../compononets/LaunchesFeed';
+import Loader from './../../components/Loader';
+import LaunchesFeed from './../../components/LaunchesFeed';
 
 const GET_LAUNCHES_QUERY = gql`
     {
