@@ -3,18 +3,18 @@ const useTechInfo = ({ name, rocket, engine, isEngine }) => {
 
   const firstRow = {
       title: isEngine ? 'NUMBER' : 'HEIGHT',
-      value: isEngine ? engine.number : rocket.height.meters + ' m/ ' + rocket.height.feet + ' /ft',
+      value: isEngine ? engine.number : rocket.height.meters + ' m /' + rocket.height.feet + ' ft',
   };
   const secondRow = {
-      title: isEngine ? 'PROPELLANT1' : 'DIAMETER',
-      value: isEngine ? engine.propellant_1 : rocket.diameter.meters + ' m/ ' + rocket.diameter.feet + ' /ft',
+      title: isEngine ? 'PROPELLANT 1' : 'DIAMETER',
+      value: isEngine ? engine.propellant_1 : rocket.diameter.meters + ' m /' + rocket.diameter.feet + ' ft',
   };
   const thirdRow = {
-      title: isEngine ? 'PROPELLANT2' : 'STAGES',
+      title: isEngine ? 'PROPELLANT 2' : 'STAGES',
       value: isEngine ? engine.propellant_2 : rocket.stages,
   };
   const fourthRow = {
-      title: isEngine ? 'THRUST TO WEIGHT' : 'COST PER LAUNCH',
+      title: isEngine ? 'THRUST-TO-WEIGHT' : 'COST-PER-LAUNCH',
       value: isEngine ? engine.thrust_to_weight : rocket.cost,
   };
 
