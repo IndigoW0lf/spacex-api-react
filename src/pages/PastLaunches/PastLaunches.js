@@ -24,10 +24,12 @@ const GET_LAUNCHES_QUERY = gql`
 const PastLaunches = () => {
     const { data, loading, error } = useQuery(GET_LAUNCHES_QUERY);
 
-    if (loading) return <Loader />
-    if (error) return <Error error={error} />
+    if (loading) return <Loader />;
+    if (error) return <Error error={error} />;
     
-    const launches = data.launchesPast.filter(launch => launch.links.article_link && launch.links.flickr_images.length > 0);
+    const launches = data.launchesPast.filter(
+        launch => launch.links.article_link && launch.links.flickr_images.length > 0
+    );
 
     return (
         <Fragment>

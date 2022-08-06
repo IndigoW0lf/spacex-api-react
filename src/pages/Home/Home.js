@@ -14,7 +14,7 @@ const GET_COMPANY_INFO = gql`
             summary
         }
     }
-`
+`;
 
 const Home = () => {
     const { data, loading, error } = useQuery(GET_COMPANY_INFO);
