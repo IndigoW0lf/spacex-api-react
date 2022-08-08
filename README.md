@@ -21,4 +21,4 @@ To view this project you have two options:
 
 Changes Coming:
 - Add unit tests
-- Change images from static to pull in from API
+- Add more rocket parameters
